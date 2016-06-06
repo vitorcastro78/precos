@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!-- Mirrored from www.enableds.com/products/slidebox/dual-sidebars/page-updates.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Apr 2016 12:48:28 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="leaflet/leaflet.css" rel="stylesheet" />
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jqueryui.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/framework.plugins.js"></script>
+</head>
+<body>
+
+    <!-- Page Content-->
+    <div id="conteudo">
+        <div class="header">
+            <a href="index.html" class="header-logo"></a>
+            <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
+            <a href="#" class="open-more"><i class="fa fa-envelope-o"></i></a>
+        </div>
+            <div class="map leaflet-container">
+                <iframe id="frmmap" src="mapa.html" class="responsive-image maps"></iframe>
+            </div>
+    </div>
+    <script>
+        jQuery(document).ready(function myfunction() {
+            EqualizaTamanhoTela();
+        });
+        var EqualizaTamanhoTela = function EqualizaTamanhoTela() {
+            var tam = jQuery("#sidebar").height();
+            jQuery("#frmmap").css('min-height', (tam));
+        }
+
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
